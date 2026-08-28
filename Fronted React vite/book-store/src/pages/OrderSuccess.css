@@ -1,0 +1,176 @@
+.order-success-page {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  background: #f8f7f4;
+}
+
+.success-card {
+  width: 100%;
+  max-width: 550px;
+
+  padding: 45px;
+
+  background: white;
+
+  border: 1px solid #eee;
+  border-radius: 12px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Success Icon */
+
+.success-icon {
+  width: 75px;
+  height: 75px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e8f7ed;
+  color: #2e8b57;
+
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+/* Heading */
+
+.success-card h1 {
+  margin: 0 0 12px;
+
+  font-size: 30px;
+}
+
+.success-message {
+  margin: 0 auto 30px;
+
+  max-width: 400px;
+
+  color: #777;
+
+  line-height: 1.6;
+}
+
+
+/* Order Details */
+
+.order-details {
+  margin-bottom: 30px;
+
+  padding: 20px;
+
+  background: #fafafa;
+
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.order-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid #eee;
+}
+
+.order-detail:last-child {
+  border-bottom: none;
+}
+
+.order-detail span {
+  color: #777;
+
+  font-size: 14px;
+}
+
+.order-detail strong {
+  font-size: 14px;
+}
+
+.order-detail .status {
+  color: #2e8b57;
+}
+
+
+/* Buttons */
+
+.success-actions {
+  display: flex;
+  gap: 12px;
+
+  justify-content: center;
+}
+
+.success-actions a {
+  padding: 12px 20px;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.view-orders-btn {
+  background: #222;
+  color: white;
+}
+
+.view-orders-btn:hover {
+  background: #b56b35;
+}
+
+.continue-btn {
+  border: 1px solid #ddd;
+
+  background: white;
+  color: #222;
+}
+
+.continue-btn:hover {
+  border-color: #b56b35;
+  color: #b56b35;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+  .success-card {
+    padding: 30px 20px;
+  }
+
+  .success-card h1 {
+    font-size: 25px;
+  }
+
+  .success-actions {
+    flex-direction: column;
+  }
+
+  .success-actions a {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+}

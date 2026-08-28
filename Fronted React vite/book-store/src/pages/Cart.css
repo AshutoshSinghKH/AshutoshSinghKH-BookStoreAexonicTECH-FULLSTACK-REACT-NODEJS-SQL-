@@ -1,0 +1,190 @@
+.cart-page {
+  min-height: 100vh;
+  padding: 50px 40px;
+
+  background: #f8f7f4;
+}
+
+.cart-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+/* Header */
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.cart-header h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+.cart-header span {
+  color: #777;
+  font-size: 14px;
+}
+
+
+/* Content */
+
+.cart-content {
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  gap: 25px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+/* Summary */
+
+.cart-summary {
+  height: fit-content;
+
+  padding: 25px;
+
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.cart-summary h2 {
+  margin: 0 0 25px;
+
+  font-size: 21px;
+}
+
+.summary-row,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+.summary-row span {
+  color: #777;
+}
+
+.cart-summary hr {
+  border: none;
+  border-top: 1px solid #eee;
+
+  margin: 20px 0;
+}
+
+.summary-total {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+
+/* Checkout */
+
+.checkout-btn {
+  display: block;
+
+  padding: 13px;
+
+  background: #222;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-weight: 600;
+}
+
+.checkout-btn:hover {
+  background: #b56b35;
+}
+
+.continue-shopping {
+  display: block;
+
+  margin-top: 15px;
+
+  text-align: center;
+
+  color: #b56b35;
+  text-decoration: none;
+
+  font-size: 14px;
+}
+
+
+/* Empty Cart */
+
+.empty-cart {
+  max-width: 500px;
+
+  margin: 120px auto;
+  padding: 50px;
+
+  background: white;
+  border-radius: 12px;
+
+  text-align: center;
+}
+
+.empty-cart-icon {
+  margin-bottom: 15px;
+
+  font-size: 55px;
+}
+
+.empty-cart h2 {
+  margin-bottom: 8px;
+}
+
+.empty-cart p {
+  margin-bottom: 25px;
+
+  color: #777;
+}
+
+.empty-cart a {
+  display: inline-block;
+
+  padding: 12px 22px;
+
+  background: #222;
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .cart-content {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .cart-page {
+    padding: 30px 20px;
+  }
+
+}
